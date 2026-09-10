@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+<title>إعداد المباراة</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="setup-page">
+  <h1>سكور بورد 3x3</h1>
+  <p class="setup-sub">جهّز الفريقين وقواعد المباراة، وبعدين ابدأ.</p>
+
+  <form id="setup-form">
+    <div id="team-a" class="team-block"></div>
+    <div id="team-b" class="team-block"></div>
+
+    <div class="section-title">قواعد المباراة</div>
+
+    <div class="two-col">
+      <div class="field-group">
+        <label for="duration">مدة المباراة (دقائق)</label>
+        <input type="number" id="duration" min="1" max="60" value="10" required>
+      </div>
+      <div class="field-group">
+        <label for="win-score">نقطة الفوز التلقائي</label>
+        <input type="number" id="win-score" min="1" max="99" value="21" required>
+      </div>
+    </div>
+
+    <div class="two-col">
+      <div class="field-group">
+        <label for="foul-limit">عدد الفاولز لتفعيل الرميات الحرة</label>
+        <input type="number" id="foul-limit" min="1" max="20" value="6" required>
+      </div>
+      <div></div>
+    </div>
+
+    <div class="two-col">
+      <div class="field-group">
+        <label for="one-point">قيمة الرمية العادية</label>
+        <input type="number" id="one-point" min="1" max="10" value="1" required>
+      </div>
+      <div class="field-group">
+        <label for="two-point">قيمة الرمية من خلف القوس</label>
+        <input type="number" id="two-point" min="1" max="10" value="2" required>
+      </div>
+    </div>
+
+    <button type="submit" class="primary-btn">بدء المباراة</button>
+  </form>
+</div>
+
+<script src="js/state.js"></script>
+<script src="js/setup.js"></script>
+</body>
+</html>
