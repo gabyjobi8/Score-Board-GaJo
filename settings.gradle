@@ -1,0 +1,2 @@
+rootProject.name = "3v3-scoreboard"
+include ':app'
